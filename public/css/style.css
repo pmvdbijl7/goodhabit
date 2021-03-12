@@ -21,4 +21,123 @@ h6 {
   color: #fffffe;
 }
 
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #fffffe;
+  background-color: transparent;
+  color: #fffffe;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn.btn-primary {
+  background-color: #7f5af0;
+  border: 1px solid #7f5af0;
+}
+
+section.start {
+  padding: 50px 30px;
+}
+section.start .start-card {
+  position: relative;
+  height: 500px;
+  background-color: #242629;
+  border-radius: 35px;
+  overflow: hidden;
+}
+section.start .start-card .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  z-index: 1000;
+}
+section.start .start-card .logo img {
+  display: block;
+  width: 20px;
+  margin: 0 auto 5px auto;
+}
+section.start .start-card .logo h1 {
+  font-size: 20px;
+}
+section.start .start-card .logo h1 .highlight {
+  color: #7f5af0;
+}
+section.start .start-card .bg-shadow-purple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section.start .start-card .woman-walking {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 190px;
+  z-index: 1000;
+}
+section.start .start-card .leaf1 {
+  position: absolute;
+  top: 8%;
+  left: -72px;
+}
+section.start .start-card .plant1 {
+  position: absolute;
+  top: 16%;
+  left: -88px;
+}
+section.start .start-card .leaves {
+  position: absolute;
+  top: 3%;
+  right: -100px;
+}
+section.start .start-card .leaf2 {
+  position: absolute;
+  top: 19%;
+  right: -5px;
+}
+section.start .start-card .plant2 {
+  position: absolute;
+  top: 34%;
+  right: -103px;
+}
+section.start h4 {
+  text-align: center;
+  margin: 50px 0;
+}
+section.start .btn:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+section.auth {
+  position: relative;
+}
+section.auth .img-group {
+  width: 300px;
+  height: 300px;
+  margin: 50px auto 0 auto;
+}
+section.auth .img-group img {
+  display: none;
+  position: absolute;
+}
+section.auth .img-group img:nth-child(1) {
+  display: block !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.auth .img-group img:nth-child(2) {
+  display: block !important;
+  top: 40%;
+  left: 17%;
+  transform: translate(-17%, -40%);
+}
+
 /*# sourceMappingURL=style.css.map */

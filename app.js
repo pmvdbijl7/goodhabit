@@ -9,6 +9,9 @@ const hostURL = process.env.URL;
 const hostPort = process.env.PORT || 8080;
 const dbConnection = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@gettingstarted.35frc.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
 
+// Import Routes
+const authRoutes = require('./routes/authRoutes');
+
 // Set Templating Engine
 app.set('view engine', 'ejs');
 
@@ -34,10 +37,13 @@ mongoose.connect(
 	}
 );
 
-// Get Home Page
+// Get Start Page
 app.get('/', (req, res) => {
-	res.render('pages/home', { title: 'Home' });
+	res.render('pages/start', { title: 'Sign Up / Sign In' });
 });
+
+// Route Middlewares
+app.use(authRoutes);
 
 // Show 404 Page if Page Doesn't Exist
 app.use((req, res, next) => {

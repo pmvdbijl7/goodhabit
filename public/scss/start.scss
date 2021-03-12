@@ -1,0 +1,91 @@
+// Import Variables
+@import './variables.scss';
+
+section.start {
+	padding: 50px 30px;
+
+	.start-card {
+		position: relative;
+		height: 500px;
+		background-color: $sub-background-color;
+		border-radius: 35px;
+		overflow: hidden;
+
+		.logo {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			margin-top: 20px;
+			z-index: 1000;
+
+			img {
+				display: block;
+				width: 20px;
+				margin: 0 auto 5px auto;
+			}
+
+			h1 {
+				font-size: 20px;
+
+				.highlight {
+					color: $primary-color;
+				}
+			}
+		}
+
+		.bg-shadow-purple {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.woman-walking {
+			position: absolute;
+			top: 33%;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 190px;
+			z-index: 1000;
+		}
+
+		.leaf1 {
+			position: absolute;
+			top: 8%;
+			left: -72px;
+		}
+
+		.plant1 {
+			position: absolute;
+			top: 16%;
+			left: -88px;
+		}
+
+		.leaves {
+			position: absolute;
+			top: 3%;
+			right: -100px;
+		}
+
+		.leaf2 {
+			position: absolute;
+			top: 19%;
+			right: -5px;
+		}
+
+		.plant2 {
+			position: absolute;
+			top: 34%;
+			right: -103px;
+		}
+	}
+
+	h4 {
+		text-align: center;
+		margin: 50px 0;
+	}
+
+	.btn:not(:last-of-type) {
+		margin-bottom: 10px;
+	}
+}
